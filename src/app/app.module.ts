@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialsModule } from './shared/materials/materials.module';
+import { SingleResponsibilityPrincipleModule } from './features/single-responsibility-principle/single-responsibility-principle.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +14,7 @@ import { MaterialsModule } from './shared/materials/materials.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialsModule,
+    SingleResponsibilityPrincipleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

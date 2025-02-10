@@ -1,1 +1,23 @@
-<p>single-responsibility-principle works!</p>
+<section>
+  <div class="container srp-container">
+    <div class="row">
+      <div class="col-lg-12 text-center mt-4">
+        <h1 class="fw-bold">{{SRP_CONSTANTS.SINGLE_RESPONSIBILITY_PRINCIPLE_SRP_TITLE}}</h1>
+      </div>
+
+      <div class="col-lg-12">
+        <p class="srp-description" [innerHTML]="SRP_CONSTANTS.SRP_DESCRIPTION"></p>
+      </div>
+
+      <div class="col-lg-12">
+        <mat-button-toggle-group>
+          <mat-button-toggle
+            [routerLink]="SRP_ROUTING_CONSTANTS.VIOLATION_OF_SRP">{{SRP_CONSTANTS.VIOLATION_OF_SRP}}</mat-button-toggle>
+          <mat-button-toggle
+            [routerLink]="SRP_ROUTING_CONSTANTS.FIXING_VIOLATION_OF_SRP">{{SRP_CONSTANTS.FIXING_THE_VIOLATION}}</mat-button-toggle>
+        </mat-button-toggle-group>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</section>

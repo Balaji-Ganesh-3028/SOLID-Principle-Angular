@@ -1,0 +1,22 @@
+.filters {
+  margin-bottom: 15px;
+
+  button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 5px;
+
+    &.active {
+      background: #007bff;
+      color: white;
+    }
+
+    &:hover {
+      background: #007bff;
+      color: white;
+    }
+  }
+}

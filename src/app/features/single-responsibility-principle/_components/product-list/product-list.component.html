@@ -1,0 +1,7 @@
+<div class="product-grid">
+  <div class="product-card" *ngFor="let product of filterProducts()">
+    <h3>{{ product.name }}</h3>
+    <p>Category: {{ product.category }}</p>
+    <p>Price: ${{ product.price }}</p>
+  </div>
+</div>

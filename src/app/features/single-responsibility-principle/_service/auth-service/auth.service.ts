@@ -4,14 +4,17 @@ import { SingleResponsibilityPrincipleModule } from '../../single-responsibility
 @Injectable({
   providedIn: SingleResponsibilityPrincipleModule,
 })
+
+// IN THIS AUTH SERVIVE WE WILL WRITE ONLY AUTHENTICATION LOGIC
+// ALL OTHER LOGIC WILL BE WRITTEN IN OTHER SERVICES
 export class AuthService {
   constructor() {}
 
   public login(): void {
-    console.log('Login');
+    // WRITE YOUR LOGIN LOGIC HERE
   }
 
   public logout(): void {
-    console.log('Logout');
+    // WRITE YOUR LOGOUT LOGIC HERE
   }
 }

@@ -1,0 +1,5 @@
+<div class="container">
+  <h2>Product List</h2>
+  <app-product-filter (selectedCategoryChange)="selectCategory($event)"></app-product-filter>
+  <app-product-list [selectedCategory]="selectedCategory"></app-product-list>
+</div>

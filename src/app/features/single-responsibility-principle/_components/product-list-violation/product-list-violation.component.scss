@@ -1,0 +1,43 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.filters {
+  margin-bottom: 15px;
+
+  button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 5px;
+
+    &.active {
+      background: #007bff;
+      color: white;
+    }
+
+    &:hover {
+      background: #007bff;
+      color: white;
+    }
+  }
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}

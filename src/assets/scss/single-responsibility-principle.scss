@@ -1,0 +1,24 @@
+@import './variable.scss'; 
+
+.srp-container{
+
+    h1{
+      font-family: $fontFamily;
+    }
+
+  .srp-description{
+    color: $black;
+    font-family: $fontFamily;
+    font-size: $fontSize14;
+    line-height: $lineHeight24;
+    font-weight: $fontWeight400;
+  }
+}
+
+.srp-violation{
+  .srp-violation-description {
+    color: $black;
+    font-size: $fontSize14;
+    font-family: $fontFamily;
+  }
+}

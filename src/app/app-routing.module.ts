@@ -38,6 +38,17 @@ const routes: Routes = [
         './features/dependency-inversion-principle/dependency-inversion-principle.module'
       ).then((m) => m.DependencyInversionPrincipleModule),
   },
+  {
+    path: '',
+    redirectTo:
+      appRoutingConstants.SINGLE_RESPONSIBILITY_PRINCIPLE.WITHOUTSLASH,
+    pathMatch: 'full',
+  },
+  {
+    path: '**',
+    redirectTo:
+      appRoutingConstants.SINGLE_RESPONSIBILITY_PRINCIPLE.WITHOUTSLASH,
+  },
 ];
 
 @NgModule({
