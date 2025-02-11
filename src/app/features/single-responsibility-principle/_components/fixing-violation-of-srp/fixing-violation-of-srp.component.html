@@ -1,4 +1,91 @@
-<div class="container">
+<div class="container fixing-srp-violation">
+  <div class="row">
+    <!-- HEADING & DESCRIPTION-->
+    <div class="col-lg-12">
+      <h2 class="mt-2">{{SRP_CONSTANTS.FIXING_THE_VIOLATION}}</h2>
+      <p class="fixing-srp-violation-description" [innerHTML]="SRP_CONSTANTS.FIXING_THE_VIOLATION_DESCROPTION"></p>
+    </div>
+    <!-- HEADING & DESCRIPTION -->
+  </div>
+
+  <!-- AFTER FIXING THE VIOLATION -->
+  <div class="row  mt-4">
+    <!-- VIOLATION HTML HEADING -->
+    <div class="col-lg-12">
+      <h2 class="image-heading">{{SRP_CONSTANTS.FIXING_THE_VIOLATION_PRODUCT_LIST_HTML_IMAGE_HEADING}}</h2>
+    </div>
+    <!-- VIOLATION HTML HEADING -->
+
+    <!-- PARENT HTML IMAGE -->
+    <div class="col-lg-4">
+      <div class="text-center mt-4">
+        <h2 class="font-weight-bold text-start">{{SRP_CONSTANTS.FIXING_THE_VIOLATION_PARENT_HTML}} :</h2>
+        <img class="w-100" class="fixing-srp-violation-image"
+          [src]="SRP_IMAGE_CONSTANTS.FIXING_OF_VIOLATION_OF_SRP_PARENT_HTML" [alt]="SRP_CONSTANTS.FIXING_THE_VIOLATION">
+      </div>
+    </div>
+    <!-- PARENT HTML IMAGE -->
+
+    <!-- PRODUCT LIST HTML IMAGE -->
+    <div class="col-lg-4">
+      <div class="text-center mt-4">
+        <h2 class="font-weight-bold text-start">{{SRP_CONSTANTS.FIXING_THE_VIOLATION_PRODUCT_LIST_HTML}} :</h2>
+        <img class="w-100" class="fixing-srp-violation-image"
+          [src]="SRP_IMAGE_CONSTANTS.FIXING_OF_VIOLATION_OF_SRP_PRODUCT_LIST_HTML"
+          [alt]="SRP_CONSTANTS.FIXING_THE_VIOLATION">
+      </div>
+    </div>
+    <!-- PRODUCT LIST HTML IMAGE -->
+
+    <!-- PRODUCT FILTER HTML IMAGE -->
+    <div class="col-lg-4">
+      <div class="text-center mt-4">
+        <h2 class="font-weight-bold text-start">{{SRP_CONSTANTS.FIXING_THE_VIOLATION_PRODUCT_FILTER_HTML}} :</h2>
+        <img class="w-100" class="fixing-srp-violation-image"
+          [src]="SRP_IMAGE_CONSTANTS.FIXING_OF_VIOLATION_OF_SRP_PRODUCT_FILTER_HTML"
+          [alt]="SRP_CONSTANTS.FIXING_THE_VIOLATION">
+      </div>
+    </div>
+    <!-- PRODUCT FILTER HTML IMAGE -->
+
+    <!-- PARENT TS IMAGE -->
+    <div class="col-lg-4">
+      <div class="text-center mt-4">
+        <h2 class="font-weight-bold text-start">{{SRP_CONSTANTS.FIXING_THE_VIOLATION_PARENT_TS}} :</h2>
+        <img class="w-100" class="fixing-srp-violation-image"
+          [src]="SRP_IMAGE_CONSTANTS.FIXING_OF_VIOLATION_OF_SRP_PARENT_TS" [alt]="SRP_CONSTANTS.FIXING_THE_VIOLATION">
+      </div>
+    </div>
+    <!-- PARENT TS IMAGE -->
+
+    <!-- PRODUCT LIST TS IMAGE -->
+    <div class="col-lg-4">
+      <div class="text-center mt-4">
+        <h2 class="font-weight-bold text-start">{{SRP_CONSTANTS.FIXING_THE_VIOLATION_PRODUCT_LIST_TS}} :</h2>
+        <img class="w-100" class="fixing-srp-violation-image"
+          [src]="SRP_IMAGE_CONSTANTS.FIXING_OF_VIOLATION_OF_SRP_PRODUCT_LIST_TS"
+          [alt]="SRP_CONSTANTS.FIXING_THE_VIOLATION">
+      </div>
+    </div>
+    <!-- PRODUCT LIST TS IMAGE -->
+
+    <!-- PRODUCT FILTER TS IMAGE -->
+    <div class="col-lg-4">
+      <div class="text-center mt-4">
+        <h2 class="font-weight-bold text-start">{{SRP_CONSTANTS.FIXING_THE_VIOLATION_PRODUCT_FILTER_TS}} :</h2>
+        <img class="w-100" class="fixing-srp-violation-image"
+          [src]="SRP_IMAGE_CONSTANTS.FIXING_OF_VIOLATION_OF_SRP_PRODUCT_FILTER_TS"
+          [alt]="SRP_CONSTANTS.FIXING_THE_VIOLATION">
+      </div>
+    </div>
+    <!-- PRODUCT FILTER TS IMAGE -->
+  </div>
+
+  <!-- AFTER FIXING THE VIOLATION -->
+
+</div>
+
+<div class="example-container mb-4">
   <h2>Product List</h2>
   <app-product-filter (selectedCategoryChange)="selectCategory($event)"></app-product-filter>
   <app-product-list [selectedCategory]="selectedCategory"></app-product-list>

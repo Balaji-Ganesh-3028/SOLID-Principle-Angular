@@ -1,18 +1,28 @@
-<h1>{{APP_CONSTANTS.APP_NAME}}</h1>
+<div class="container">
+  <div class="row">
+    <!-- HEADING -->
+    <div class="col-lg-12 mt-4 text-center">
+      <h1>{{APP_CONSTANTS.APP_NAME}}</h1>
+    </div>
+    <!-- HEADING -->
 
+    <div class="col-lg-12">
+      <!-- SOLID PRINCIPLES LIST -->
+      <mat-button-toggle-group>
+        <mat-button-toggle
+          [routerLink]="APP_ROUTES.SINGLE_RESPONSIBILITY_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.SINGLE_RESPONSIBILITY_PRINCIPLE}}</mat-button-toggle>
+        <mat-button-toggle
+          [routerLink]="APP_ROUTES.OPEN_CLOSED_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.OPEN_CLOSED_PRINCIPLE}}</mat-button-toggle>
+        <mat-button-toggle
+          [routerLink]="APP_ROUTES.LISKOV_SUBSTITUTION_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.LISKOV_SUBSTITUTION_PRINCIPLE}}</mat-button-toggle>
+        <mat-button-toggle
+          [routerLink]="APP_ROUTES.INTERFACE_SEGREGATION_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.INTERFACE_SEGREGATION_PRINCIPLE}}</mat-button-toggle>
+        <mat-button-toggle
+          [routerLink]="APP_ROUTES.DEPENDENCY_INVERSION_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.DEPENDENCY_INVERSION_PRINCIPLE}}</mat-button-toggle>
+      </mat-button-toggle-group>
+      <!-- SOLID PRINCIPLES LIST -->
 
-
-<mat-button-toggle-group>
-  <mat-button-toggle
-    [routerLink]="APP_ROUTES.SINGLE_RESPONSIBILITY_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.SINGLE_RESPONSIBILITY_PRINCIPLE}}</mat-button-toggle>
-  <mat-button-toggle
-    [routerLink]="APP_ROUTES.OPEN_CLOSED_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.OPEN_CLOSED_PRINCIPLE}}</mat-button-toggle>
-  <mat-button-toggle
-    [routerLink]="APP_ROUTES.LISKOV_SUBSTITUTION_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.LISKOV_SUBSTITUTION_PRINCIPLE}}</mat-button-toggle>
-  <mat-button-toggle
-    [routerLink]="APP_ROUTES.INTERFACE_SEGREGATION_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.INTERFACE_SEGREGATION_PRINCIPLE}}</mat-button-toggle>
-  <mat-button-toggle
-    [routerLink]="APP_ROUTES.DEPENDENCY_INVERSION_PRINCIPLE.WITHOUTSLASH">{{APP_CONSTANTS.DEPENDENCY_INVERSION_PRINCIPLE}}</mat-button-toggle>
-</mat-button-toggle-group>
-
-<router-outlet></router-outlet>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

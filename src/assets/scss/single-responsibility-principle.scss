@@ -9,16 +9,35 @@
   .srp-description{
     color: $black;
     font-family: $fontFamily;
-    font-size: $fontSize14;
+    font-size: $fontSize16;
     line-height: $lineHeight24;
     font-weight: $fontWeight400;
   }
 }
 
-.srp-violation{
+.srp-violation, .fixing-srp-violation{
+  .image-heading {
+    color: $black;
+    font-family: $fontFamily;
+    height: $heightAuto;
+    background-color: $light-gray;
+    font-weight: $fontWeight600;
+    padding: $padding10;
+    margin: $margin0;
+    text-align: $textAlignCenter;
+  }
   .srp-violation-description {
     color: $black;
-    font-size: $fontSize14;
+    font-size: $fontSize16;
     font-family: $fontFamily;
+    line-height: $lineHeight24;
+    font-weight: $fontWeight400;
+  }
+}
+
+.fixing-srp-violation {
+  .fixing-srp-violation-image{
+    height: $height200;
+    width: $width100Percentage;
   }
 }
