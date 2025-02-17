@@ -1,0 +1,39 @@
+@import './variable.scss'; 
+
+.ocp-container{
+
+    h1{
+      font-family: $fontFamily;
+    }
+
+  .ocp-description{
+    color: $black;
+    font-family: $fontFamily;
+    font-size: $fontSize16;
+    line-height: $lineHeight24;
+    font-weight: $fontWeight400;
+  }
+}
+
+.ocp-violation, .fixing-ocp-violation{
+
+  .image-heading {
+    color: $black;
+    font-family: $fontFamily;
+    height: $heightAuto;
+    background-color: $light-gray;
+    font-weight: $fontWeight600;
+    padding: $padding10;
+    margin: $margin0;
+    text-align: $textAlignCenter;
+  }
+
+  .ocp-violation-description {
+    color: $black;
+    font-size: $fontSize16;
+    font-family: $fontFamily;
+    line-height: $lineHeight24;
+    font-weight: $fontWeight400;
+  }
+
+}
