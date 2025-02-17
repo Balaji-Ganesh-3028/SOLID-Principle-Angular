@@ -1,1 +1,30 @@
-<p>open-closed-principle works!</p>
+<section>
+  <div class="container ocp-container">
+    <div class="row">
+      <!-- HEADING -->
+      <div class="col-lg-12 text-center mt-4">
+        <h1 class="fw-bold">{{OCP_CONSTANTS.OPEN_CLOSED_PRINCIPLE_SRP_TITLE}}</h1>
+      </div>
+      <!-- HEADING -->
+
+      <!-- DESCRIPTION -->
+      <div class="col-lg-12">
+        <p class="ocp-description" [innerHTML]="OCP_CONSTANTS.OPEN_CLOSED_PRINCIPLE_SRP_DESCRIPTION"></p>
+      </div>
+      <!-- DESCRIPTION -->
+
+      <!-- EXAMPLES -->
+      <div class="col-lg-12">
+        <mat-button-toggle-group>
+          <mat-button-toggle
+            [routerLink]="OCP_ROUTING_CONSTANTS.VIOLATION_OF_OCP">{{OCP_CONSTANTS.VIOLATION_OF_OCP}}</mat-button-toggle>
+          <mat-button-toggle
+            [routerLink]="OCP_ROUTING_CONSTANTS.FIXING_VIOLATION_OF_OCP">{{OCP_CONSTANTS.FIXING_THE_VIOLATION}}</mat-button-toggle>
+        </mat-button-toggle-group>
+        <router-outlet></router-outlet>
+      </div>
+      <!-- EXAMPLES -->
+
+    </div>
+  </div>
+</section>
