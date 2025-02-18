@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { liskovSubtitutionPrincipleConstants } from './_constants/liskov-substitution-principle-constants.constants';
-import { liskovSubtitutionPrincipleImagesConstants } from './_constants';
+import {
+  liskovSubtitutionPrincipleImagesConstants,
+  liskovSubtitutionPrincipleConstants,
+} from './_constants';
 
 @Component({
   selector: 'app-liskov-subtitution-principle',
