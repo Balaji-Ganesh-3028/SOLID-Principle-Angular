@@ -1,0 +1,35 @@
+@import './variable.scss';
+
+.lsp-container{
+
+    h1{
+      font-family: $fontFamily;
+    }
+
+  .lsp-description{
+    color: $black;
+    font-family: $fontFamily;
+    font-size: $fontSize16;
+    line-height: $lineHeight24;
+    font-weight: $fontWeight400;
+  }
+
+    .image-heading {
+    color: $black;
+    font-family: $fontFamily;
+    height: $heightAuto;
+    background-color: $light-gray;
+    font-weight: $fontWeight600;
+    padding: $padding10;
+    margin: $margin0;
+    text-align: $textAlignCenter;
+  }
+
+  .lsp-violation-description {
+    color: $black;
+    font-size: $fontSize16;
+    font-family: $fontFamily;
+    line-height: $lineHeight24;
+    font-weight: $fontWeight400;
+  }
+}
