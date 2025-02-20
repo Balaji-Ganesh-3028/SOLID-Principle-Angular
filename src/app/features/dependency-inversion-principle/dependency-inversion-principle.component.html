@@ -1,1 +1,44 @@
-<p>dependency-inversion-principle works!</p>
+<section>
+  <div class="container dip-container">
+    <div class="row">
+      <!-- HEADING -->
+      <div class="col-lg-12 text-center mt-4">
+        <h1 class="fw-bold">{{DIP_CONSTANTS.DEPENDENCY_INVERSION_PRINCIPLE_TITLE}}</h1>
+      </div>
+      <!-- HEADING -->
+
+      <!-- DESCRIPTION -->
+      <div class="col-lg-12">
+        <p class="dip-description" [innerHTML]="DIP_CONSTANTS.DIP_DESCRIPTION"></p>
+      </div>
+      <!-- DESCRIPTION -->
+    </div>
+
+    <!-- BASE CLASS -->
+    <div class="row  mt-4">
+      <!-- VIOLATION HTML HEADING -->
+      <div class="col-lg-12">
+        <h2 class="image-heading">{{DIP_CONSTANTS.DEPENDENCY_INVERSION_PRINCIPLE_TITLE}}</h2>
+      </div>
+      <!-- VIOLATION HTML HEADING -->
+
+      <!-- HTML IMAGE -->
+      <div class="col-lg-12">
+        <div class="text-center mt-4">
+          <img class="" [src]="DIP_IMAGE_CONSTANTS.DIP_EXAMPLE_IMAGE"
+            [alt]="DIP_CONSTANTS.DEPENDENCY_INVERSION_PRINCIPLE_TITLE">
+        </div>
+      </div>
+      <!-- HTML IMAGE -->
+
+      <!-- DESCRIPTION -->
+      <div class="col-lg-12 mt-2">
+        <p class="dip-description" [innerHTML]="DIP_CONSTANTS.DIP_EXAMPLE_DESCRIPTION"></p>
+      </div>
+      <!-- DESCRIPTION -->
+    </div>
+    <!-- BASE CLASS -->
+
+
+  </div>
+</section>
