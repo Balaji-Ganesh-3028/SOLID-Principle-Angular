@@ -1,1 +1,44 @@
-<p>interface-segregation-principle works!</p>
+<section>
+  <div class="container isp-container">
+    <div class="row">
+      <!-- HEADING -->
+      <div class="col-lg-12 text-center mt-4">
+        <h1 class="fw-bold">{{ISP_CONSTANTS.INTERFACE_SEGREGATION_PRINCIPLE_TITLE}}</h1>
+      </div>
+      <!-- HEADING -->
+
+      <!-- DESCRIPTION -->
+      <div class="col-lg-12">
+        <p class="isp-description" [innerHTML]="ISP_CONSTANTS.ISP_DESCRIPTION"></p>
+      </div>
+      <!-- DESCRIPTION -->
+    </div>
+
+    <!-- BASE CLASS -->
+    <div class="row  mt-4">
+      <!-- VIOLATION HTML HEADING -->
+      <div class="col-lg-12">
+        <h2 class="image-heading">{{ISP_CONSTANTS.INTERFACE_SEGREGATION_PRINCIPLE_TITLE}}</h2>
+      </div>
+      <!-- VIOLATION HTML HEADING -->
+
+      <!-- HTML IMAGE -->
+      <div class="col-lg-12">
+        <div class="text-center mt-4">
+          <img class="" [src]="ISP_IMAGE_CONSTANTS.INTERFACE_SEGREGATION_PRINCIPLE_IMAGE"
+            [alt]="ISP_CONSTANTS.INTERFACE_SEGREGATION_PRINCIPLE_TITLE">
+        </div>
+      </div>
+      <!-- HTML IMAGE -->
+
+      <!-- DESCRIPTION -->
+      <div class="col-lg-12 mt-2">
+        <p class="isp-description" [innerHTML]="ISP_CONSTANTS.ISP_EXAMPLE_DESCRIPTION"></p>
+      </div>
+      <!-- DESCRIPTION -->
+    </div>
+    <!-- BASE CLASS -->
+
+
+  </div>
+</section>
